@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Rivals - The Ultimate Showdown</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #f5f5f5;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://placehold.co/1920x1080/1a1a1a/ffffff?text=Rivals+Battle+Scene') center center/cover no-repeat;
+        }
+        .card-bg {
+            background-color: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glow-effect {
+            box-shadow: 0 0 15px rgba(79, 70, 229, 0.5), 0 0 30px rgba(79, 70, 229, 0.3);
+        }
+        .text-glow {
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+        }
+        .text-gradient {
+            background: -webkit-linear-gradient(45deg, #a78bfa, #4f46e5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-separator {
+            width: 100px;
+            height: 4px;
+            background-image: linear-gradient(to right, #6366f1, #a78bfa);
+            margin: 1rem auto;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-black tracking-tighter text-white">
+                R<span class="text-indigo-400">R</span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#features" class="text-gray-300 hover:text-white transition">Features</a>
+                <a href="#rivals" class="text-gray-300 hover:text-white transition">The Rivals</a>
+                <a href="#gameplay" class="text-gray-300 hover:text-white transition">Gameplay</a>
+                <a href="#community" class="text-gray-300 hover:text-white transition">Community</a>
+            </div>
+            <button class="hidden md:block bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2 px-6 rounded-lg transition-transform transform hover:scale-105 glow-effect">
+                Play Now
+            </button>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-90">
+            <a href="#features" class="block text-center py-3 text-gray-300 hover:text-white transition">Features</a>
+            <a href="#rivals" class="block text-center py-3 text-gray-300 hover:text-white transition">The Rivals</a>
+            <a href="#gameplay" class="block text-center py-3 text-gray-300 hover:text-white transition">Gameplay</a>
+            <a href="#community" class="block text-center py-3 text-gray-300 hover:text-white transition">Community</a>
+            <div class="py-4 text-center">
+                <button class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 glow-effect">
+                    Play Now
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero-bg min-h-screen flex items-center justify-center pt-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white uppercase tracking-tighter text-glow">
+                    Choose your <span class="text-gradient">Rival</span>
+                </h1>
+                <p class="text-lg md:text-2xl text-gray-300 mt-6 max-w-3xl mx-auto">
+                    Dive into a world of intense battles, strategic gameplay, and become the ultimate champion in the Roblox universe.
+                </p>
+                <div class="mt-12">
+                    <button class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 px-10 rounded-lg text-xl transition-transform transform hover:scale-105 glow-effect">
+                        Join The Fight
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 bg-black">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-white">Unleash Your Power</h2>
+                <div class="section-separator"></div>
+                <p class="text-center text-gray-400 max-w-2xl mx-auto mb-16">
+                    Roblox Rivals is more than just a game. It's an arena where skill, strategy, and power collide.
+                </p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature Card 1 -->
+                    <div class="card-bg p-8 rounded-xl text-center transition-all duration-300 hover:border-indigo-500 hover:-translate-y-2">
+                         <div class="text-indigo-400 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Dynamic Abilities</h3>
+                        <p class="text-gray-400">Master dozens of unique abilities for each Rival. Create powerful combos and outplay your opponents.</p>
+                    </div>
+                    <!-- Feature Card 2 -->
+                    <div class="card-bg p-8 rounded-xl text-center transition-all duration-300 hover:border-indigo-500 hover:-translate-y-2">
+                        <div class="text-indigo-400 mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Multiple Game Modes</h3>
+                        <p class="text-gray-400">From classic 1v1 duels to chaotic team battles and objective-based missions, there's a mode for every playstyle.</p>
+                    </div>
+                    <!-- Feature Card 3 -->
+                    <div class="card-bg p-8 rounded-xl text-center transition-all duration-300 hover:border-indigo-500 hover:-translate-y-2">
+                       <div class="text-indigo-400 mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" /><path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Deep Customization</h3>
+                        <p class="text-gray-400">Unlock and equip countless skins, accessories, and emotes to personalize your Rival and stand out in the arena.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Rivals Section -->
+        <section id="rivals" class="py-20 bg-gray-900 bg-opacity-40">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-white">Meet The Rivals</h2>
+                <div class="section-separator"></div>
+                 <p class="text-center text-gray-400 max-w-2xl mx-auto mb-16">
+                    Each Rival possesses a unique set of skills. Who will you master?
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Rival Card 1 -->
+                    <div class="card-bg rounded-lg overflow-hidden group">
+                        <img src="https://placehold.co/400x500/c026d3/ffffff?text=Volt" alt="Rival Volt" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white">Volt</h3>
+                            <p class="text-indigo-300 mb-2">Master of Storms</p>
+                            <p class="text-gray-400">A swift warrior who commands lightning to shock and awe his enemies from a distance.</p>
+                        </div>
+                    </div>
+                    <!-- Rival Card 2 -->
+                    <div class="card-bg rounded-lg overflow-hidden group">
+                        <img src="https://placehold.co/400x500/be123c/ffffff?text=Blaze" alt="Rival Blaze" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white">Blaze</h3>
+                            <p class="text-indigo-300 mb-2">Inferno Brawler</p>
+                            <p class="text-gray-400">A fierce close-quarters combatant who uses pyromancy to incinerate anyone who stands in her way.</p>
+                        </div>
+                    </div>
+                    <!-- Rival Card 3 -->
+                    <div class="card-bg rounded-lg overflow-hidden group">
+                        <img src="https://placehold.co/400x500/047857/ffffff?text=Terra" alt="Rival Terra" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white">Terra</h3>
+                            <p class="text-indigo-300 mb-2">Earth Guardian</p>
+                            <p class="text-gray-400">A formidable defender who manipulates the earth to create impenetrable barriers and seismic shocks.</p>
+                        </div>
+                    </div>
+                    <!-- Rival Card 4 -->
+                    <div class="card-bg rounded-lg overflow-hidden group">
+                        <img src="https://placehold.co/400x500/1e3a8a/ffffff?text=Shade" alt="Rival Shade" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white">Shade</h3>
+                            <p class="text-indigo-300 mb-2">Silent Assassin</p>
+                            <p class="text-gray-400">A stealthy rogue who uses shadows and illusions to confuse and eliminate targets with precision.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gameplay Section -->
+        <section id="gameplay" class="py-20 bg-black">
+             <div class="container mx-auto px-6 flex flex-wrap items-center">
+                <div class="w-full lg:w-1/2 lg:pr-12 mb-10 lg:mb-0">
+                    <div class="relative">
+                        <img src="https://placehold.co/800x600/111827/ffffff?text=Gameplay+in+Action" alt="Gameplay" class="rounded-lg shadow-2xl w-full">
+                        <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 rounded-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" /></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                     <h2 class="text-4xl font-bold text-white mb-4">Fast-Paced, Strategic Combat</h2>
+                     <div class="section-separator !mx-0 mb-6"></div>
+                     <p class="text-gray-400 mb-6 text-lg">
+                        Jump into arenas designed for thrilling action. Every match is a test of reflexes, timing, and tactical thinking. Use the environment to your advantage, coordinate with your team, and execute devastating combos to claim victory.
+                     </p>
+                      <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-indigo-400 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong class="text-white">Intuitive Controls:</strong> Easy to learn, difficult to master. Perfect for both new and veteran players.</span>
+                        </li>
+                         <li class="flex items-start">
+                            <svg class="w-6 h-6 text-indigo-400 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong class="text-white">Competitive Ranking:</strong> Climb the leaderboards, earn exclusive rewards, and prove you're the best of the best.</span>
+                        </li>
+                         <li class="flex items-start">
+                             <svg class="w-6 h-6 text-indigo-400 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong class="text-white">Regular Updates:</strong> New Rivals, maps, and events are added frequently to keep the competition fresh.</span>
+                        </li>
+                    </ul>
+                </div>
+             </div>
+        </section>
+
+        <!-- Community Section -->
+        <section id="community" class="py-20 bg-gray-900 bg-opacity-40">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-white">Join Our Community</h2>
+                 <div class="section-separator"></div>
+                <p class="text-gray-400 max-w-2xl mx-auto mb-10">
+                    Connect with other players, find teammates, and stay up-to-date with the latest news and announcements.
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="bg-indigo-600 p-4 rounded-full text-white hover:bg-indigo-500 transition-all transform hover:scale-110">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.64 3.031a1.002 1.002 0 00-.81-.223l-3.23.864c-1.353.362-1.353 2.223 0 2.585l1.64.441-2.924 2.923a.999.999 0 000 1.414l1.414 1.414a.999.999 0 001.414 0l2.923-2.924.442 1.641c.362 1.353 2.223 1.353 2.585 0l.864-3.23a1.002 1.002 0 00-.223-.811L19.64 3.03zM4.93 4.93a1 1 0 00-1.415 0l-1.586 1.586a1 1 0 000 1.414l3.586 3.586a1 1 0 001.414 0l1.586-1.586a1 1 0 000-1.414L4.93 4.93zm2.122 10.606a1 1 0 00-1.414 0l-1.586 1.586a1 1 0 000 1.414l1.586 1.586a1 1 0 001.414 0l3.586-3.586a1 1 0 000-1.414l-1.586-1.586z"></path></svg>
+                    </a>
+                    <a href="#" class="bg-blue-600 p-4 rounded-full text-white hover:bg-blue-500 transition-all transform hover:scale-110">
+                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+                    </a>
+                    <a href="#" class="bg-red-600 p-4 rounded-full text-white hover:bg-red-500 transition-all transform hover:scale-110">
+                        <svg class="w-8 h-8" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 Roblox Rivals. All Rights Reserved.</p>
+            <p class="text-sm mt-2">This is a concept website and is not affiliated with Roblox Corporation.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.onscroll = function () {
+            if (window.scrollY > 50) {
+                navbar.classList.add("bg-black", "bg-opacity-80", "backdrop-blur-sm", "shadow-lg");
+            } else {
+                navbar.classList.remove("bg-black", "bg-opacity-80", "backdrop-blur-sm", "shadow-lg");
+            }
+        };
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
